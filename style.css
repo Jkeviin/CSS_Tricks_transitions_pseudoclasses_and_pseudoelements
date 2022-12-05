@@ -1,0 +1,50 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.42857143;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: #484848;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+
+    /* Centar */
+    text-align: center;
+    margin: auto auto;
+}
+
+h1 span {
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+
+/* Paso el maouse por h1 y el primer span */
+h1:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+
+h1:hover span:nth-child(1)::after {
+    content: "'";
+}
+
+/* Paso el maouse por h1 y el segundo span */
+h1:hover span:nth-child(2) {
+    margin-left: 30px;
+}
+
+h1:hover span {
+    color: #ffffff;
+    /* Sombra horizontal, vertical, blur, color */
+    text-shadow:
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 40px #ffffff;
+}
